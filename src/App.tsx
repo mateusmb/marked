@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import EditMarkdown from "./components/EditMarkdown";
+import PreviewMarkdown from "./components/PreviewMarkdown";
+import { Page } from "./styles/styles";
 
-function App() {
+const App: React.FC = () => {
+  const [markdownText, setMarkdownText] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Page>
+      <EditMarkdown
+        markdownText={markdownText}
+        setMarkdownText={setMarkdownText}
+      />
+      <PreviewMarkdown markdownText={markdownText} />
+    </Page>
   );
-}
+};
 
 export default App;
