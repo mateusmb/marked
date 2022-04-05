@@ -1,11 +1,12 @@
 # MarkEd
 
-A Markdown editor in realtime. Write with markdown notation and check the results live. Save your edits to .md and .pdf files (TBD)
+A Markdown editor in realtime. Write with markdown notation and check the results live. Save your edits to .md and .pdf files.
 
+![MarkEd Demo Gif](https://i.imgur.com/Y6I3DXA.gif)
 
 ## Libs and frameworks
 
-Made with ReactJs, styled-components and ContextAPI for state management (TBD). Markdown rendering is provided by [react-markdown](https://github.com/remarkjs/react-markdown).
+Made with ReactJs, styled-components and ContextAPI for state management. Markdown rendering is provided by [react-markdown](https://github.com/remarkjs/react-markdown).
 
 ## Demo
 
@@ -33,7 +34,7 @@ Or if you are yarn team
 yarn
 ```
 
-Start the web application in your fav browser
+Start the web application on your favorite browser
 
 ```bash
 npm start
@@ -47,4 +48,4 @@ yarn start
 
 ## Usage
 
-Should be self explanatory. If not, or if you want to make it better, feel free to add an issue, PR and/or fork this project.
+Should be self explanatory. If not, and if you want to make it better, feel free to add an issue, PR and/or fork this project.

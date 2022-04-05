@@ -1,22 +1,11 @@
 import styled from "styled-components";
 
-export const EditorContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-`
-
-export const EditorHeader = styled.h2`
-  padding: 10px;
-  color: lightgray;
-`
-
 export const Editor = styled.textarea`
   width: 80vh;
   height: 80vh;
   border-radius: 4px;
   border: none;
-  box-shadow: 2px 2px 10px #888;
+  box-shadow: 2px 2px 10px #000;
   font-size: 100%;
   line-height: inherit;
   padding: 8px 16px;
