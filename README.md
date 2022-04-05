@@ -1,10 +1,6 @@
-<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
-
 # MarkEd
 
-[![npm][npm-image]][npm-url]
-[npm-image]: https://img.shields.io/npm/v/react-icons.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/npm
+[![npm version](https://badge.fury.io/js/react-markdown.svg)](https://badge.fury.io/js/react-markdown)
 
 A Markdown editor in realtime. Write with markdown notation and check the results live. Save your edits to .md and .pdf files.
 
