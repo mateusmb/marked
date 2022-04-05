@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import EditMarkdown from "./components/EditMarkdown";
 import PreviewMarkdown from "./components/PreviewMarkdown";
+import GlobalContext from "./context";
 import { Page } from "./styles/styles";
+import "./styles/global";
+import { GlobalStyle } from "./styles/global";
 
 const App: React.FC = () => {
-  const [markdownText, setMarkdownText] = useState("");
-
   return (
-    <Page>
-      <EditMarkdown
-        markdownText={markdownText}
-        setMarkdownText={setMarkdownText}
-      />
-      <PreviewMarkdown markdownText={markdownText} />
-    </Page>
+    <GlobalContext>
+      <GlobalStyle />
+      <Page>
+        <EditMarkdown />
+        <PreviewMarkdown />
+      </Page>
+    </GlobalContext>
   );
 };
 

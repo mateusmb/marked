@@ -7,7 +7,8 @@ export const PreviewContainer = styled.div`
 `
 
 export const PreviewHeader = styled.h2`
-  padding: 16px;
+  padding: 10px;
+  color: lightgray;
 `
 
 export const Preview = styled.div`

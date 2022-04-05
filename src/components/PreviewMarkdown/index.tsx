@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactMarkdown from "react-markdown";
+import TextContext from "../../context/text";
 import { Preview, PreviewContainer, PreviewHeader } from "./styles";
 
-interface IProps {
-  markdownText: string;
-}
+const PreviewMarkdown: React.FC = () => {
+  const { state } = useContext(TextContext);
 
-const PreviewMarkdown: React.FC<IProps> = ({ markdownText }) => {
   return (
     <PreviewContainer>
       <PreviewHeader>Preview</PreviewHeader>
       <Preview>
-        <ReactMarkdown>{markdownText}</ReactMarkdown>
+        <ReactMarkdown>{state.content}</ReactMarkdown>
       </Preview>
     </PreviewContainer>
   );

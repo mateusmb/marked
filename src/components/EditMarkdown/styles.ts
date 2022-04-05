@@ -7,7 +7,8 @@ export const EditorContainer = styled.div`
 `
 
 export const EditorHeader = styled.h2`
-  padding: 16px;
+  padding: 10px;
+  color: lightgray;
 `
 
 export const Editor = styled.textarea`
